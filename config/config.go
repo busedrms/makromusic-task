@@ -9,7 +9,7 @@ type Config struct {
 
 func NewConfig() *Config {
 	return &Config{
-		DBConnectionString: "postgres://username:password@localhost:5432/database_name",
+		DBConnectionString: "postgres://postgres:admin@localhost/todoapp?sslmode=disable",
 		RedisAddress:       "localhost:6379",
 		RedisPassword:      "",
 		RedisDB:            0,
